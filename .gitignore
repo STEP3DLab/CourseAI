@@ -1,0 +1,25 @@
+# Игнорируем временные и бинарные файлы
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.zip
+*.rar
+*.pdf
+*.docx
+*.exe
+*.mp4
+*.mov
+*.avi
+*.woff
+*.ttf
+*.psd
+
+# Служебные файлы IDE и системы
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+.vscode/
+.idea/
