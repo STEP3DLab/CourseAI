@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Мета-теги для SEO и предпросмотра -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интенсив по искусственному интеллекту — Ганьшин Владимир</title>
+  <meta name="description" content="5-часовой интенсив по современному ИИ от Ганьшина Владимира: промт-инжиниринг, Sora 2, агенты, 3D и визуал.">
+  <!-- Иконка по умолчанию: замените href на assets/rgsy-logo.png после добавления файла -->
+  <link rel="icon" id="favicon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='1' y2='0'%3E%3Cstop stop-color='%231e293b'/%3E%3Cstop offset='1' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='12' fill='url(%23g)'/%3E%3Cpath fill='%23fff' d='M13 33.5V14.8h6.8c2.7 0 4.7 1.7 4.7 4.3 0 1.8-1 3.3-2.7 3.9l3.3 10.5h-3.6l-2.8-9h-2.3v9zM16.5 22h3.2c1.2 0 2-0.8 2-2s-0.8-2-2-2h-3.2zM27.6 28.9c0-3.1 2.4-5.4 5.6-5.4 3.1 0 5.4 2.3 5.4 5.4s-2.3 5.5-5.4 5.5c-3.2 0-5.6-2.4-5.6-5.5m3.3 0c0 1.3 0.9 2.3 2.3 2.3 1.3 0 2.2-1 2.2-2.3 0-1.3-0.9-2.3-2.2-2.3-1.4 0-2.3 1-2.3 2.3'/%3E%3C/svg%3E" data-fallback="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='1' y2='0'%3E%3Cstop stop-color='%231e293b'/%3E%3Cstop offset='1' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='12' fill='url(%23g)'/%3E%3Cpath fill='%23fff' d='M13 33.5V14.8h6.8c2.7 0 4.7 1.7 4.7 4.3 0 1.8-1 3.3-2.7 3.9l3.3 10.5h-3.6l-2.8-9h-2.3v9zM16.5 22h3.2c1.2 0 2-0.8 2-2s-0.8-2-2-2h-3.2zM27.6 28.9c0-3.1 2.4-5.4 5.6-5.4 3.1 0 5.4 2.3 5.4 5.4s-2.3 5.5-5.4 5.5c-3.2 0-5.6-2.4-5.6-5.5m3.3 0c0 1.3 0.9 2.3 2.3 2.3 1.3 0 2.2-1 2.2-2.3 0-1.3-0.9-2.3-2.2-2.3-1.4 0-2.3 1-2.3 2.3'/%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  </noscript>
+  <meta property="og:title" content="Быстрый старт в современном ИИ">
+  <meta property="og:description" content="Интенсив РГСУ: практика с документами, сайтами, изображениями, 3D и Sora 2.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/rgsy-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Быстрый старт в современном ИИ">
+  <meta name="twitter:description" content="5-часовой интенсив от Ганьшина В.К.">
+  <meta name="theme-color" content="#0b1120">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Технопарк РГСУ",
+      "url": "https://example.com/",
+      "logo": "https://example.com/assets/rgsy-logo.png",
+      "sameAs": [
+        "https://t.me/rgsy-tech",
+        "https://vk.com/rgsy",
+        "https://youtube.com/@rgsy"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Интенсив по искусственному интеллекту",
+      "startDate": "2024-12-14T10:00:00+03:00",
+      "endDate": "2024-12-14T15:00:00+03:00",
+      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Технопарк РГСУ",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Москва",
+          "addressCountry": "RU"
+        }
+      },
+      "image": ["https://example.com/assets/rgsy-logo.png"],
+      "description": "5-часовой интенсив по современному искусственному интеллекту: промт-инжиниринг, визуал, 3D, агенты, видео и звук.",
+      "performer": {
+        "@type": "Person",
+        "name": "Ганьшин Владимир"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Технопарк РГСУ",
+        "url": "https://example.com/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Фоновый слой с параллакс-анимацией -->
+  <div class="background" aria-hidden="true">
+    <div class="background__gradient"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+  </div>
+
+  <!-- Кнопка наверх -->
+  <button class="to-top" type="button" aria-label="Вернуться наверх">
+    <span class="to-top__icon" aria-hidden="true">▲</span>
+  </button>
+
+  <!-- Фиксированная шапка сайта -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <!-- Логотип: заменить файл в assets/rgsy-logo.png -->
+      <a class="logo" href="#top">
+        <span class="logo__icon" aria-hidden="true">
+          <!-- SVG-плейсхолдер логотипа; замените цвет и текст по необходимости -->
+          <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="logo-gradient" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="#1e293b"></stop>
+                <stop offset="100%" stop-color="#3b82f6"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="48" height="48" rx="12" fill="url(#logo-gradient)"></rect>
+            <text x="50%" y="58%" text-anchor="middle" font-size="16" font-family="'Inter', system-ui" font-weight="600" fill="#ffffff">РГ</text>
+          </svg>
+        </span>
+        <img class="logo__image" alt="Логотип Технопарк РГСУ" width="48" height="48" loading="lazy" hidden>
+        <span class="logo__text">Интенсив ИИ</span>
+      </a>
+      <!-- Навигация с якорями -->
+      <nav class="main-nav" aria-label="Основная навигация">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__label">Меню</span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <!-- Для изменения пунктов меню обновите ссылки ниже -->
+          <li><a class="nav-link" href="#hero">Главная</a></li>
+          <li><a class="nav-link" href="#about">О курсе</a></li>
+          <li><a class="nav-link" href="#program">Программа</a></li>
+          <li><a class="nav-link" href="#testimonials">Отзывы</a></li>
+          <li><a class="nav-link" href="#pricing">Тарифы</a></li>
+          <li><a class="nav-link" href="#register">Регистрация</a></li>
+          <li><a class="nav-link" href="#join">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Герой-блок: изменить текст можно прямо в заголовках -->
+    <section class="hero" id="hero">
+      <div class="container hero__content">
+        <p class="hero__eyebrow">14 декабря · Москва · гибридный формат</p>
+        <h1 class="hero__title">Быстрый старт в современном ИИ: от промт-инжиниринга до Sora 2</h1>
+        <p class="hero__subtitle">5-часовой интенсив от Ганьшина В.К. — офлайн и онлайн. Практика с реальными задачами: документы, сайты, изображения, 3D-модели, агенты, видео и звук.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#register">Записаться</a>
+          <a class="btn btn--ghost" href="#program">Программа</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок о курсе с полупрозрачными карточками -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title">О курсе</h2>
+        <p class="section__subtitle">Команда технопарка РГСУ подготовила интенсив, который закрывает практические задачи бизнеса и образования.</p>
+        <div class="glass-grid">
+          <article class="glass-card">
+            <h3>Кому подойдёт</h3>
+            <p>Продактам, методистам, предпринимателям и студентам, ищущим быстрый рывок в ИИ.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Чему научитесь</h3>
+            <p>Создавать документы, лендинги, презентации и сценарии в одном окне.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Формат</h3>
+            <p>5 часов живого практикума: офлайн в кампусе и синхронная онлайн-трансляция.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Результат</h3>
+            <p>Готовые шаблоны промтов, чек-листы и рабочая инфраструктура под ваши задачи.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Программа интенсива -->
+    <section class="section program" id="program">
+      <div class="container">
+        <h2 class="section__title">Программа интенсива</h2>
+        <p class="section__subtitle">За 5 часов вы пройдёте все ключевые направления генеративного ИИ.</p>
+        <div class="program__grid">
+          <article class="program-card">
+            <span class="program-card__icon" aria-hidden="true">🧠</span>
+            <h3>Промт-инжиниринг</h3>
+            <p>Документы, сайты и веб-приложения за один запрос; обзор GPT-5+, Qwen 3 Max, Gemini 2.5 Pro.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-card__icon" aria-hidden="true">🎨</span>
+            <h3>Изображения</h3>
+            <p>ChatGPT и Nano Banana: логотипы, буклеты, интерьерные решения, дизайн 3D.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-card__icon" aria-hidden="true">📦</span>
+            <h3>3D-модели</h3>
+            <p>Текст → 3D (Hugging Face / GenCAD), 2D→CAD, автоматизация скриптами.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-card__icon" aria-hidden="true">🤖</span>
+            <h3>Агенты</h3>
+            <p>Perplexity Browser, Google Notebook LM: делегирование задач и планирование.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-card__icon" aria-hidden="true">🎬</span>
+            <h3>Видео и звук</h3>
+            <p>Sora 2: создание роликов, музыкальных треков и песен с AI.</p>
+          </article>
+        </div>
+        <p class="program__duration">Всего: 5 часов</p>
+      </div>
+    </section>
+
+    <!-- Отзывы участников -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section__title">Отзывы</h2>
+        <p class="section__subtitle">Несколько цитат участников прошлых потоков.</p>
+        <div class="testimonials__grid">
+          <figure class="testimonial-card">
+            <blockquote>«За день собрали прототип сервиса и презентовали инвесторам. Очень практично!»</blockquote>
+            <figcaption>Анна, продуктовый менеджер</figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <blockquote>«Закрыл пробелы по генерации 3D и сделал каталог для клиента. Интенсив огонь!»</blockquote>
+            <figcaption>Михаил, дизайнер</figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <blockquote>«Перенастроили процессы в отделе, теперь агенты закрывают рутину без нас.»</blockquote>
+            <figcaption>Дарья, руководитель проектов</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <h2 class="section__title">Тарифы</h2>
+        <p class="section__subtitle">Выберите комфортный формат участия.</p>
+        <div class="pricing__grid">
+          <article class="pricing-card">
+            <h3>Онлайн</h3>
+            <p class="pricing-card__price">7 900 ₽</p>
+            <ul class="pricing-card__list">
+              <li>Живая трансляция в HD</li>
+              <li>Доступ к записи на 30 дней</li>
+              <li>Чат с экспертами</li>
+            </ul>
+            <a class="btn btn--primary" href="#register">Выбрать тариф</a>
+          </article>
+          <article class="pricing-card">
+            <h3>Офлайн</h3>
+            <p class="pricing-card__price">12 900 ₽</p>
+            <ul class="pricing-card__list">
+              <li>Место в кампусе РГСУ</li>
+              <li>Практика с наставником</li>
+              <li>Раздаточные материалы и мерч</li>
+            </ul>
+            <a class="btn btn--primary" href="#register">Выбрать тариф</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <h2 class="section__title">FAQ</h2>
+        <p class="section__subtitle">Ответы на популярные вопросы. Добавьте свои по необходимости.</p>
+        <div class="faq__list" data-accordion>
+          <article class="faq-item">
+            <button class="faq-item__toggle" type="button">Как оплатить участие?</button>
+            <div class="faq-item__content">
+              <p>После оформления заявки менеджер пришлёт ссылку на оплату картой или счёт для юрлиц.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-item__toggle" type="button">Будет ли запись?</button>
+            <div class="faq-item__content">
+              <p>Да, запись доступна всем участникам на 30 дней. В тарифе офлайн — на 60 дней.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-item__toggle" type="button">Нужен ли опыт в ИИ?</button>
+            <div class="faq-item__content">
+              <p>Подойдёт начинающим: достаточно базового уровня владения компьютером и браузером.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-item__toggle" type="button">Есть ли сертификат?</button>
+            <div class="faq-item__content">
+              <p>По итогам интенсива выдаём именной сертификат участника от Технопарка РГСУ.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-item__toggle" type="button">Как подготовиться?</button>
+            <div class="faq-item__content">
+              <p>Возьмите ноутбук, на котором установлен браузер Chrome или Edge. Подключение к Wi-Fi предоставим.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-item__toggle" type="button">Можно ли прийти командой?</button>
+            <div class="faq-item__content">
+              <p>Да, предусмотрены корпоративные пакеты. Оставьте комментарий в форме и мы свяжемся с вами.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Регистрация -->
+    <section class="section register" id="register">
+      <div class="container">
+        <h2 class="section__title">Регистрация</h2>
+        <p class="section__subtitle">Заполните форму, и команда технопарка свяжется с вами в течение рабочего дня.</p>
+        <form class="form" id="register-form" novalidate>
+          <!-- Подсказки: замените placeholder на актуальные данные -->
+          <div class="form__row">
+            <label for="fullName">ФИО</label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Иванов Иван" required>
+            <span class="form__error" data-error-for="fullName"></span>
+          </div>
+          <div class="form__row">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+            <span class="form__error" data-error-for="email"></span>
+          </div>
+          <div class="form__row">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+            <span class="form__error" data-error-for="phone"></span>
+          </div>
+          <div class="form__row">
+            <label for="format">Формат участия</label>
+            <select id="format" name="format" required>
+              <option value="">Выберите формат</option>
+              <option value="online">Онлайн</option>
+              <option value="offline">Офлайн</option>
+            </select>
+            <span class="form__error" data-error-for="format"></span>
+          </div>
+          <div class="form__row">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Расскажите о ваших задачах"></textarea>
+          </div>
+          <label class="form__checkbox">
+            <input type="checkbox" id="consent" name="consent" required>
+            <span>Я согласен на обработку персональных данных и получение материалов интенсива.</span>
+          </label>
+          <span class="form__error" data-error-for="consent"></span>
+          <button class="btn btn--primary" type="submit">Отправить заявку</button>
+        </form>
+        <p class="form__note">Отправляя форму, вы соглашаетесь с политикой обработки данных.</p>
+      </div>
+    </section>
+
+    <!-- Контакты и подписка -->
+    <section class="section join" id="join">
+      <div class="container join__content">
+        <div class="join__info">
+          <h2 class="section__title">Присоединяйтесь</h2>
+          <p class="section__subtitle">Подпишитесь на обновления технопарка и узнайте первыми о новых потоках.</p>
+          <form class="form form--inline" id="subscribe-form" novalidate>
+            <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
+            <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@domain.ru" required>
+            <button class="btn btn--ghost" type="submit">Подписаться</button>
+            <span class="form__error" data-error-for="subscribe-email"></span>
+          </form>
+          <address class="join__address">
+            <p>РГСУ, ул. Вильгельма Пика, 4</p>
+            <a href="https://yandex.ru/maps" target="_blank" rel="noopener">Посмотреть на карте</a>
+          </address>
+        </div>
+        <div class="join__socials" aria-label="Социальные сети">
+          <a class="social-link" href="https://t.me/rgsy" target="_blank" rel="noopener" aria-label="Telegram">
+            <!-- Иконку можно заменить, обновив файл в assets/icons/telegram.svg -->
+            <img src="assets/icons/telegram.svg" alt="" loading="lazy" width="32" height="32">
+          </a>
+          <a class="social-link" href="https://vk.com/rgsy" target="_blank" rel="noopener" aria-label="ВКонтакте">
+            <img src="assets/icons/vk.svg" alt="" loading="lazy" width="32" height="32">
+          </a>
+          <a class="social-link" href="https://youtube.com/@rgsy" target="_blank" rel="noopener" aria-label="YouTube">
+            <img src="assets/icons/youtube.svg" alt="" loading="lazy" width="32" height="32">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="current-year"></span> Технопарк РГСУ. Все права защищены.</p>
+      <div class="footer__links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Тост-уведомление для статуса формы -->
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

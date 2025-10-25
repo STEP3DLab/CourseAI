@@ -1,0 +1,16 @@
+{
+  "name": "Интенсив по искусственному интеллекту",
+  "short_name": "ИИ интенсив",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#05070f",
+  "theme_color": "#0b1120",
+  "icons": [
+    {
+      "src": "assets/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "ru"
+}
