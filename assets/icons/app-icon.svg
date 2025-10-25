@@ -1,0 +1,13 @@
+<!-- SVG-плейсхолдер иконки приложения; замените на собственный файл при необходимости -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <path d="M164 368V144h88c35 0 61 21 61 56 0 23-13 42-35 50l43 118h-62l-31-94h-25v94z" fill="#f8fafc" />
+  <path d="M164 240h46c16 0 26-10 26-24s-10-24-26-24h-46z" fill="#f8fafc" />
+  <path d="M309 326c0-38 30-68 70-68s68 30 68 68-28 70-68 70-70-32-70-70zm44 0c0 14 10 26 26 26s26-12 26-26-10-26-26-26-26 12-26 26z" fill="#f8fafc" />
+</svg>
